@@ -18,7 +18,7 @@ function debounce(func, wait = 20, immediate = true) {
 
 
 
-const sliderImages = document.querySelectorAll('.slide-in'  )
+const sliderImages = document.querySelectorAll('.slide-in')
 
 function checkSlide(e){
 
@@ -31,7 +31,7 @@ sliderImage.height / 2;
 const imageBottom = sliderImage.offsetTop + sliderImage.height;
 const isHalfShown = slideInAt >sliderImage.offsetTop;
 const isNotScrolledPast = window.scrollY < imageBottom;
-if(isHalfScrolledPast && isNotScrolledPast){
+if(isHalfShown && isNotScrolledPast){
 sliderImage.classList.add('active');
 
 }
